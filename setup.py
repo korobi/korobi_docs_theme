@@ -6,7 +6,6 @@ setup(
     packages=['korobi_docs_theme'],
     url='https://github.com/korobi/korobi_docs_theme',
     license='MIT',
-    author='Jamie',
-    author_email='jamie@neptunepowered.org',
+    author='korobi.io team and contributors',
     description='The Korobi documentation theme.'
 )
