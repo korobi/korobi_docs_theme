@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1" />
+    {{ metatags }}
+
+    {% block htmltitle %}
+    <title>{{ title|striptags|e }}{{ titlesuffix }}</title>
+    {% endblock %}
+
+    <link type="text/plain" rel="author" href="//korobi.io/humans.txt" />
+    <link rel="stylesheet" href="//korobi.io/assets/css/application.css?v=95a7ba8" />
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css" />
+</head>
+<body>
+    <nav class="navigation" role="navigation">
+        <div class="navigation--inner">
+            <div class="navigation--brand-mobile">
+                <a href="/" class="navigation--brandlink navigation--brandlink-mobile">Korobi</a>
+            </div>
+            <div class="navigation--brand">
+                <a href="/" class="navigation--brandlink" role="menuitem">Korobi</a>
+                <i class="navigation--menutoggle fa fa-navicon"></i>
+            </div>
+            <ul class="navigation--links">
+                <li class=" active"><a href="/" role="menuitem">Home</a></li><li class=""><a href="/networks" role="menuitem">Networks</a></li><li class="external"><a href="https://docs.korobi.io/" role="menuitem">Docs <i class="fa fa-external-link"></i></a></li>        </ul>
+            <ul class="navigation--links navigation--links-secondary">
+            </ul>
+        </div>
+    </nav>
+
+
+    <main>
+        {% block body %}{% endblock %}
+    </main>
+
+    <footer class="footer">
+        <div class="footer--inner">
+            <div class="footer--copyright">&copy; 2015 &ndash; <div class="footer--revision"><i class="fa fa-code-fork"></i></div><a href="//korobi.io/theme"><i class="fa fa-adjust"></i></a></div>
+            <ul class="footer--links">
+                <li class="external"><a href="https://github.com/korobi/Korobi/issues" role="menuitem">Issues <i class="fa fa-external-link"></i></a></li>
+                <li class=""><a href="//github.com/korobi/korobi_docs_theme/commits/master" role="menuitem">Revisions</a></li>
+            </ul>
+        </div>
+    </footer>
+
+
+    <div id="bottom"></div>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="//korobi.io/assets/js/application.js?v=95a7ba8"></script>
+</body>
+</html>
