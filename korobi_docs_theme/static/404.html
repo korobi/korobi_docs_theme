@@ -3,11 +3,8 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="initial-scale=1" />
-    {{ metatags }}
 
-    {% block htmltitle %}
-    <title>{{ title|striptags|e }}{{ titlesuffix }}</title>
-    {% endblock %}
+    <title>Not Found | Korobi</title>
 
     <link type="text/plain" rel="author" href="//korobi.io/humans.txt" />
     <link rel="stylesheet" href="//korobi.io/assets/css/application.css" />
@@ -33,12 +30,10 @@
         </div>
     </nav>
 
-
     <main>
-        <div class="docs">
-            <section>
-                {% block body %}{% endblock %}
-            </section>
+        <div class="errorpage">
+            <h2>Not Found</h2>
+            <p>The search and rescue crew has returned exhausted and unsuccessful.</p>
         </div>
     </main>
 
