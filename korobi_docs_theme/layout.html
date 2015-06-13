@@ -6,7 +6,7 @@
     {{ metatags }}
 
     {% block htmltitle %}
-    <title>{{ title|striptags|e }}{{ titlesuffix }}</title>
+    <title>{{ title|striptags|e }}{{ titlesuffix }} | Korobi</title>
     {% endblock %}
 
     <link type="text/plain" rel="author" href="//korobi.io/humans.txt" />
@@ -49,11 +49,10 @@
             </div>
             <ul class="footer--links">
                 <li class="external"><a href="//github.com/korobi/Korobi/issues" role="menuitem">Issues <i class="fa fa-external-link"></i></a></li>
-                <li class=""><a href="//github.com/korobi/Korobi/commits/master" role="menuitem">Revisions</a></li>
+                <li class=""><a href="//github.com/korobi/Korobi/commits/master" role="menuitem">Revisions <i class="fa fa-external-link"></i></a></li>
             </ul>
         </div>
     </footer>
-
 
     <div id="bottom"></div>
     <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
