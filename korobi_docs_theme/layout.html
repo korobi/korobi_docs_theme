@@ -39,13 +39,13 @@
     </nav>
 
     <main>
+        <ul class="relbar">
+            <li><a href="{{ pathto(master_doc) }}">{{ shorttitle|e }}</a> &raquo;</li>
+            {%- for parent in parents %}
+            <li><a href="{{ parent.link|e }}" {% if loop.last %}{{ accesskey("U") }}{% endif %}>{{ parent.title }}</a> &raquo;</li>
+            {%- endfor %}
+        </ul>
         <div class="docs">
-            <ul class="relbar">
-                <li><a href="{{ pathto(master_doc) }}">{{ shorttitle|e }}</a> &raquo;</li>
-                {%- for parent in parents %}
-                <li><a href="{{ parent.link|e }}" {% if loop.last %}{{ accesskey("U") }}{% endif %}>{{ parent.title }}</a> &raquo;</li>
-                {%- endfor %}
-            </ul>
             <section>
                 {% block body %}{% endblock %}
             </section>
